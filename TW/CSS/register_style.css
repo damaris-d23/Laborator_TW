@@ -1,0 +1,169 @@
+html, body {
+    background-color: #2a323d; 
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: #343e4a; 
+    padding: 30px 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #4CAF50; 
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.row label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #d1d5db;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+select, 
+textarea {
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    padding: 12px;
+    background-color: #2a323d; 
+    color: #ffffff;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #88929e;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 1px solid #4CAF50;
+}
+
+.file-input {
+    background-color: #2a323d;
+    padding: 8px;
+    color: #88929e;
+}
+
+.two-col {
+    display: flex;
+    gap: 20px;
+}
+
+.two-col > div {
+    flex: 1;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+}
+
+.checkbox-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.checkbox-grid label {
+    font-weight: normal;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #ffffff;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn.primary {
+    background-color: #4CAF50; 
+    color: #ffffff;
+}
+
+.btn.primary:hover {
+    background-color: #45a049;
+}
+
+.btn.ghost {
+    background-color: transparent;
+    border: 1px solid #88929e;
+    color: #d1d5db;
+}
+
+.btn.ghost:hover {
+    background-color: rgba(255,255,255,0.05);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.login-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    color: #45a049;
+}
+
+
+@media (max-width: 600px) {
+    .two-col {
+        flex-direction: column;
+        gap: 0;
+    }
+}

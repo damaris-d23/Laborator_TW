@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    background-color: #2a323d; 
+    color: white;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+header nav a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header nav a:hover { 
+    color: #45a049; 
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.column {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 320px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.column h2 {
+    margin-bottom: 15px;
+    color: #333333;
+    font-size: 20px;
+}
+
+.column p {
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #2a323d;
+    color: #4CAF50;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s;
+    width: fit-content;
+}
+
+.btn:hover {
+    background-color: #1f252d;
+}
+
+footer {
+    background-color: #2a323d;
+    color: #88929e;
+    padding: 20px 0;
+    margin-top: auto;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p:last-child {
+    color: #4CAF50;
+}
+
+
+@media (max-width: 1000px) {
+    .columns {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column { 
+        width: 100%;
+        max-width: 400px;
+    }
+    header nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
