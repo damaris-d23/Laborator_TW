@@ -1,4 +1,8 @@
+console.log("Chatbot-ul s-a încărcat cu succes!");
+
 let questions = [
+
+
     {
         question: "Te-ai apucat de ideea de proiect?",
         options: {

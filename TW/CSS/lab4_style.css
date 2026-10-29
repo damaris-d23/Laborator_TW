@@ -1,0 +1,98 @@
+/* Resetare de bază */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.box {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* === PASUL 1: Selectors === */
+p.important {
+    color: blue;
+    font-size: 18px;
+    padding: 10px;
+}
+/* Această a doua declarație o va suprascrie pe prima */
+p.important {
+    color: red;
+}
+
+/* === PASUL 2: Box Model === */
+.card-a {
+    box-sizing: content-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    margin-bottom: 10px;
+    background-color: #ffcccc;
+}
+.card-b {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    background-color: #ccffcc;
+}
+
+/* === PASUL 3: Flexbox Navigation === */
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #343e4a;
+    color: white;
+    padding: 1rem 2rem;
+}
+.navbar .nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+.navbar a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* === PASUL 4: CSS Grid Gallery === */
+.gallery {
+    display: grid;
+    /* Se ajustează automat la minim 240px pe coloană */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 1rem;
+}
+.grid-card {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* === PASUL 5: Responsive Layout === */
+.layout {
+    display: grid;
+    /* Pe mobil: stau pe o singură coloană (una sub alta) */
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+    padding: 1rem;
+}
+.sidebar {
+    background-color: #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+/* Pe ecrane mai mari (laptop/tabletă orizontal): se împart în 2 coloane */
+@media (min-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr 3fr; /* Sidebar mai mic, conținut mai mare */
+    }
+}

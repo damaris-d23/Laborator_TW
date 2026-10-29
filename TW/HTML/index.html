@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laborator 4</title>
+    <!-- Legătura cu fișierul CSS -->
+    <link rel="stylesheet" href="../CSS/lab4_style.css">
+</head>
+<body>
+
+    <!-- Pas 3: Navigație cu Flexbox -->
+    <nav class="navbar">
+        <div class="brand">MyBrand</div>
+        <div class="nav-links">
+            <a href="#">Acasă</a>
+            <a href="#">Servicii</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Pas 5: Layout Responsiv (Sidebar + Main Content) -->
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Informații laterale</p>
+        </aside>
+        
+        <!-- Conținutul principal -->
+        <main class="main-content">
+            
+            <!-- Pas 1: CSS Selectors -->
+            <section class="box">
+                <h2>Pas 1: Selectors</h2>
+                <p class="important">Acesta este un paragraf important.</p>
+                <p><small><em>Explicație: A doua regulă CSS din fișier (culoarea roșie) va câștiga deoarece are aceeași specificitate, dar este declarată ultima, suprascriind regula de deasupra ei.</em></small></p>
+            </section>
+
+            <!-- Pas 2: CSS Box Model -->
+            <section class="box">
+                <h2>Pas 2: Box Model</h2>
+                <div class="card-a">Card A (content-box)</div>
+                <div class="card-b">Card B (border-box)</div>
+                <p><small><em>Calcul matematic: Lățimea totală a Cardului A este de 250px (200px width + 40px padding stânga/dreapta + 10px border), iar lățimea totală a Cardului B rămâne fix 200px (paddingul și borderul intră la interior).</em></small></p>
+            </section>
+
+            <!-- Pas 4: Galerie cu CSS Grid -->
+            <section class="box">
+                <h2>Pas 4: CSS Grid Gallery</h2>
+                <div class="gallery">
+                    <div class="grid-card">Card 1</div>
+                    <div class="grid-card">Card 2</div>
+                    <div class="grid-card">Card 3</div>
+                    <div class="grid-card">Card 4</div>
+                    <div class="grid-card">Card 5</div>
+                    <div class="grid-card">Card 6</div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
